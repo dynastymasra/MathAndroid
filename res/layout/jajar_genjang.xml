@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Jajar Genjang"
+            android:id="@+id/titleJajarGenjang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alas"
+            android:id="@+id/alasJajarGenjang"
+            android:layout_alignLeft="@+id/titleJajarGenjang"
+            android:layout_below="@+id/titleJajarGenjang"
+            android:inputType="numberDecimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi"
+            android:id="@+id/tinggiJajarGenjang"
+            android:layout_alignLeft="@+id/titleJajarGenjang"
+            android:layout_below="@+id/alasJajarGenjang"
+            android:layout_alignRight="@+id/titleJajarGenjang"
+            android:inputType="numberDecimal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas Jajar Genjang Adalah"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tinggiJajarGenjang"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/hasilJajarGenjang"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewBelahKetupat"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/hitungJajarGenjang"
+                android:text="Hitung"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:longClickable="false"/>
+        <Button
+                android:id="@+id/kembaliJajarGenjangi"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>

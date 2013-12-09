@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Belah Ketupat"
+            android:id="@+id/textViewBelahKetupat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang Sisi AC"
+            android:id="@+id/editTextBelahKetupatAC"
+            android:layout_alignLeft="@+id/textViewBelahKetupat"
+            android:layout_below="@+id/textViewBelahKetupat"
+            android:inputType="numberDecimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang Sisi BD"
+            android:id="@+id/editTextBelahKetupatBD"
+            android:layout_alignLeft="@+id/textViewBelahKetupat"
+            android:layout_below="@+id/editTextBelahKetupatAC"
+            android:layout_alignRight="@+id/textViewBelahKetupat"
+            android:inputType="numberDecimal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas Belah Ketupat Adalah"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextBelahKetupatBD"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewHasilBelahKetupat"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewBelahKetupat"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonBelahKetupatHitung"
+                android:text="Hitung"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/buttonBelahKetupatHitungKembali"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>

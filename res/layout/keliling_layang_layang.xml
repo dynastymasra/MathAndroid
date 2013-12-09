@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keliling Layang-layang"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang AB"
+            android:id="@+id/editTextKelilingLayangLayang"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView"
+            android:numeric="decimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang DC"
+            android:id="@+id/editTextKelilingLayangLayang1"
+            android:layout_alignLeft="@+id/editTextKelilingLayangLayang"
+            android:layout_below="@+id/editTextKelilingLayangLayang"
+            android:numeric="decimal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keliling Layang-layang Adalah"
+            android:id="@+id/textViewKelilingLayangLayang"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextKelilingLayangLayang1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewKelilingLayangLayang1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewKelilingLayangLayang"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextKelilingLayangLayang"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonKelilingLayangLayang"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Kembali"/>
+        <Button
+                android:id="@+id/buttonKelilingLayangLayang1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Hitung"/>
+    </LinearLayout>
+</RelativeLayout>

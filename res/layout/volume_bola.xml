@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Bola"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jari-jari"
+            android:id="@+id/editTextVolumeBola"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView"
+            android:numeric="decimal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Bola Adalah"
+            android:id="@+id/textView1"
+            android:layout_alignLeft="@+id/editTextVolumeBola"
+            android:layout_below="@+id/editTextVolumeBola"
+            android:gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="hasil"
+            android:id="@+id/textViewVolumeBola"
+            android:layout_alignLeft="@+id/editTextVolumeBola"
+            android:layout_below="@+id/textView1"
+            android:gravity="center_horizontal"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextVolumeBola"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonVolumeBola"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali"/>
+        <Button
+                android:id="@+id/buttonVolumeBola1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Hitung"/>
+    </LinearLayout>
+
+</RelativeLayout>

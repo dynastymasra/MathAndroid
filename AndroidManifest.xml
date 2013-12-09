@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.dynastymasra.math"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <application android:label="@string/app_name">
+        <activity android:name="MyActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".luas.Luas" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.LuasExample" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.BelahKetupat" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.JajarGenjang" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.Lingkaran" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.Persegi" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.PersegiPanjang" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.Segitiga" android:screenOrientation="portrait"></activity>
+        <activity android:name=".luas.Trapesium" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.Keliling" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingExample" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingJajarGenjang" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingLayangLayang" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingLingkaran" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingPersegiPanjang" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingPersegi" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingSegitiga" android:screenOrientation="portrait"></activity>
+        <activity android:name=".keliling.KelilingTrapesium" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.Volume" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeExample" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeBalok" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeBola" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeKerucut" android:screenOrientation="portrait"></activity>
+    </application>
+</manifest> 

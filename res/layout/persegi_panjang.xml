@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Persegi Panjang"
+            android:id="@+id/textViewPersegiPanjang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang"
+            android:id="@+id/editTextPersegiPanjang"
+            android:layout_alignLeft="@+id/textViewPersegiPanjang"
+            android:layout_below="@+id/textViewPersegiPanjang"
+            android:inputType="numberDecimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lebar"
+            android:id="@+id/editText1PersegiPanjang"
+            android:layout_alignLeft="@+id/textViewPersegiPanjang"
+            android:layout_below="@+id/editTextPersegiPanjang"
+            android:inputType="numberDecimal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas Persegi Panjang Adalah"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editText1PersegiPanjang"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hasil"
+            android:id="@+id/textView1PersegiPanjang"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewPersegiPanjang"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:id="@+id/buttonPersegiPanjang"
+                android:text="Hitung"/>
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:id="@+id/button1PersegiPanjang"
+                android:text="Kembali"/>
+    </LinearLayout>
+</RelativeLayout>

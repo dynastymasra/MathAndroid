@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewKeliling"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="5px"
+            android:textColor="#000000"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewKeliling"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewKeliling"
+            android:layout_gravity="center"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+        <Button
+            android:text="Back"
+            android:id="@+id/buttonKeliling"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+                android:text="Next"
+                android:id="@+id/buttonKeliling1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Segitiga"
+            android:id="@+id/luasSegitigaTexView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alas"
+            android:id="@+id/editTextLuasSegitiga1"
+            android:layout_alignLeft="@+id/luasSegitigaEditView1"
+            android:layout_below="@+id/luasSegitigaTexView1"
+            android:inputType="numberDecimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi"
+            android:id="@+id/luasSegitigaEditView2"
+            android:layout_alignLeft="@+id/luasSegitigaTexView1"
+            android:layout_below="@+id/editTextLuasSegitiga1" android:numeric="decimal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas Segitiga Adalah"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/luasSegitigaEditView2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/luasSegitigaTextView1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/luasSegitigaTexView1"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonLuasSegitiga1"
+                android:text="Hitung"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"/>
+        <Button
+                android:id="@+id/buttonLuasSegitiga2"
+                android:text="Kembali"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

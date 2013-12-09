@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Balok"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang"
+            android:id="@+id/editTextVolumeBalok"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView"
+            android:numeric="decimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lebar"
+            android:id="@+id/editTextVolumeBalok1"
+            android:layout_alignLeft="@+id/editTextVolumeBalok"
+            android:layout_below="@+id/editTextVolumeBalok"
+            android:numeric="decimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi"
+            android:id="@+id/editTextVolumeBalok2"
+            android:layout_alignLeft="@+id/editTextVolumeBalok"
+            android:layout_below="@+id/editTextVolumeBalok1"
+            android:numeric="decimal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Balok Adalah"
+            android:id="@+id/textView1"
+            android:layout_alignLeft="@+id/editTextVolumeBalok"
+            android:layout_below="@+id/editTextVolumeBalok2"
+            android:gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewVolumeBalok"
+            android:layout_alignLeft="@+id/editTextVolumeBalok"
+            android:layout_below="@+id/textView1"
+            android:gravity="center_horizontal"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextVolumeBalok"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonVolumeBalok"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali"/>
+        <Button
+                android:id="@+id/buttonVolumeBalok1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Hitung"/>
+    </LinearLayout>
+</RelativeLayout>
