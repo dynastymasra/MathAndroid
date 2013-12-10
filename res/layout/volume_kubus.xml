@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Kubus"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang Sisi-sisi"
+            android:id="@+id/editTextVolumeKubus"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView"
+            android:numeric="decimal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Kubus Adalah"
+            android:id="@+id/textView1"
+            android:layout_alignLeft="@+id/editTextVolumeKubus"
+            android:layout_below="@+id/editTextVolumeKubus"
+            android:gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewVolumeKubus"
+            android:layout_alignLeft="@+id/editTextVolumeKubus"
+            android:layout_below="@+id/textView1"
+            android:gravity="center_horizontal"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextVolumeKubus"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali"
+                android:id="@+id/buttonVolumeKubus"/>
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:id="@+id/buttonVolumeKubus1"/>
+    </LinearLayout>
+</RelativeLayout>

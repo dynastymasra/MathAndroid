@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 import com.dynastymasra.math.keliling.Keliling;
+import com.dynastymasra.math.konversi.Konversi;
 import com.dynastymasra.math.luas.Luas;
 import com.dynastymasra.math.volume.Volume;
 
@@ -47,6 +48,22 @@ public class MyActivity extends Activity {
             startActivity(intent);
         } else if (item.equalsIgnoreCase("Menghitung Volume")) {
             Intent intent = new Intent(MyActivity.this, Volume.class);
+            startActivity(intent);
+        } else if (item.equalsIgnoreCase("Konversi Panjang")) {
+            Intent intent = new Intent(MyActivity.this, Konversi.class);
+            intent.putExtra("item", item);
+            startActivity(intent);
+        } else if (item.equalsIgnoreCase("Konversi Berat")) {
+            Intent intent = new Intent(MyActivity.this, Konversi.class);
+            intent.putExtra("item", item);
+            startActivity(intent);
+        } else if (item.equalsIgnoreCase("Konversi Volume")) {
+            Intent intent = new Intent(MyActivity.this, Konversi.class);
+            intent.putExtra("item", item);
+            startActivity(intent);
+        } else if (item.equalsIgnoreCase("Konversi Suhu")) {
+            Intent intent = new Intent(MyActivity.this, Konversi.class);
+            intent.putExtra("item", item);
             startActivity(intent);
         }
     }

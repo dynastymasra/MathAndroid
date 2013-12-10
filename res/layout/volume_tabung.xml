@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Tabung"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panjang jari-jari"
+            android:id="@+id/editTextVolumeTabung"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView"
+            android:numeric="decimal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi"
+            android:id="@+id/editTextVolumeTabung1"
+            android:layout_alignLeft="@+id/editTextVolumeTabung"
+            android:layout_below="@+id/editTextVolumeTabung"
+            android:numeric="decimal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Tabung Adalah"
+            android:id="@+id/textView1"
+            android:layout_alignLeft="@+id/editTextVolumeTabung"
+            android:layout_below="@+id/editTextVolumeTabung1"
+            android:gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewVolumeTabung"
+            android:layout_alignLeft="@+id/editTextVolumeTabung"
+            android:layout_below="@+id/textView1"
+            android:gravity="center_horizontal"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextVolumeTabung"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonVolumeTabung"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Kembali"/>
+        <Button
+                android:id="@+id/buttonVolumeTabung1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Hitung"/>
+    </LinearLayout>
+</RelativeLayout>

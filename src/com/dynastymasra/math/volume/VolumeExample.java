@@ -29,10 +29,10 @@ public class VolumeExample extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.volume);
 
-        buttonBack = (Button)findViewById(R.id.buttonVolume);
-        buttonNext = (Button)findViewById(R.id.buttonVolume1);
-        textView = (TextView)findViewById(R.id.textViewVolume);
-        imageView = (ImageView)findViewById(R.id.imageViewVolume);
+        buttonBack = (Button) findViewById(R.id.buttonVolume);
+        buttonNext = (Button) findViewById(R.id.buttonVolume1);
+        textView = (TextView) findViewById(R.id.textViewVolume);
+        imageView = (ImageView) findViewById(R.id.imageViewVolume);
 
         view();
 
@@ -68,6 +68,18 @@ public class VolumeExample extends Activity {
             imageView.setImageResource(R.drawable.uraian_volume_kerucut);
             textView.setText(item);
             number = 3;
+        } else if (item.equalsIgnoreCase("Kubus")) {
+            imageView.setImageResource(R.drawable.uraian_volume_kubus);
+            textView.setText(item);
+            number = 4;
+        } else if (item.equalsIgnoreCase("Limas")) {
+            imageView.setImageResource(R.drawable.uraian_volume_limas);
+            textView.setText(item);
+            number = 5;
+        } else if (item.equalsIgnoreCase("Tabung")) {
+            imageView.setImageResource(R.drawable.uraian_volume_tabung);
+            textView.setText(item);
+            number = 6;
         }
     }
 
@@ -80,6 +92,15 @@ public class VolumeExample extends Activity {
             startActivity(intent);
         } else if (number == 3) {
             Intent intent = new Intent(VolumeExample.this, VolumeKerucut.class);
+            startActivity(intent);
+        } else if (number == 4) {
+            Intent intent = new Intent(VolumeExample.this, VolumeKubus.class);
+            startActivity(intent);
+        } else if (number == 5) {
+            Intent intent = new Intent(VolumeExample.this, VolumeLimas.class);
+            startActivity(intent);
+        } else if (number == 6) {
+            Intent intent = new Intent(VolumeExample.this, VolumeTabung.class);
             startActivity(intent);
         }
     }

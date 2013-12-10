@@ -37,5 +37,10 @@
         <activity android:name=".volume.VolumeBalok" android:screenOrientation="portrait"></activity>
         <activity android:name=".volume.VolumeBola" android:screenOrientation="portrait"></activity>
         <activity android:name=".volume.VolumeKerucut" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeKubus" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeLimas" android:screenOrientation="portrait"></activity>
+        <activity android:name=".volume.VolumeTabung" android:screenOrientation="portrait"></activity>
+        <activity android:name=".konversi.Konversi" android:screenOrientation="portrait"></activity>
+        <activity android:name=".konversi.KonversiHitung" android:screenOrientation="portrait"></activity>
     </application>
 </manifest> 

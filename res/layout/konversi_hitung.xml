@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewKonversiHitung"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewKonversiHitung1"
+            android:text="Text"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewKonversiHitung"/>
+    <EditText
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextKonversiHitung"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewKonversiHitung1"
+            android:layout_toLeftOf="@+id/spinnerKonversiHitung"
+            android:numeric="decimal"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerKonversiHitung"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewKonversiHitung1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konversi ke Satuan"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/spinnerKonversiHitung"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerKonversiHitung1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Konversi"
+            android:id="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/spinnerKonversiHitung1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:id="@+id/textViewKonversiHitung2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextKonversiHitung"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/buttonKonversiHitung"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Kembali"/>
+        <Button
+                android:id="@+id/buttonKonversiHitung1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hitung"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
