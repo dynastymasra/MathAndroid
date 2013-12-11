@@ -28,11 +28,11 @@ public class VolumeLimas extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.volume_limas);
 
-        buttonBack = (Button)findViewById(R.id.buttonVolumeLimas);
-        buttonNext = (Button)findViewById(R.id.buttonVolumeLimas1);
-        alas = (EditText)findViewById(R.id.editTextVolumeLimas);
-        tinggi = (EditText)findViewById(R.id.editTextVolumeLimas1);
-        textView = (TextView)findViewById(R.id.textViewVolumeLimas);
+        buttonBack = (Button) findViewById(R.id.buttonVolumeLimas);
+        buttonNext = (Button) findViewById(R.id.buttonVolumeLimas1);
+        alas = (EditText) findViewById(R.id.editTextVolumeLimas);
+        tinggi = (EditText) findViewById(R.id.editTextVolumeLimas1);
+        textView = (TextView) findViewById(R.id.textViewVolumeLimas);
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +54,7 @@ public class VolumeLimas extends Activity {
         if (alas.getText().toString().isEmpty() || tinggi.getText().toString().isEmpty()) {
             Toast.makeText(VolumeLimas.this, "Masukan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         } else {
-            Double hasil = (1.0/3.0) * Double.valueOf(alas.getText().toString()) * Double.valueOf(tinggi.getText().toString());
+            Double hasil = (1.0 / 3.0) * Double.valueOf(alas.getText().toString()) * Double.valueOf(tinggi.getText().toString());
             textView.setText("" + hasil);
         }
     }

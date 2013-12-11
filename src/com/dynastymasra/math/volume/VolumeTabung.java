@@ -29,10 +29,10 @@ public class VolumeTabung extends Activity {
         setContentView(R.layout.volume_tabung);
 
         buttonBack = (Button) findViewById(R.id.buttonVolumeTabung);
-        buttonNext = (Button)findViewById(R.id.buttonVolumeTabung1);
-        textView = (TextView)findViewById(R.id.textViewVolumeTabung);
-        jari = (EditText)findViewById(R.id.editTextVolumeTabung);
-        tinggi = (EditText)findViewById(R.id.editTextVolumeTabung1);
+        buttonNext = (Button) findViewById(R.id.buttonVolumeTabung1);
+        textView = (TextView) findViewById(R.id.textViewVolumeTabung);
+        jari = (EditText) findViewById(R.id.editTextVolumeTabung);
+        tinggi = (EditText) findViewById(R.id.editTextVolumeTabung1);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

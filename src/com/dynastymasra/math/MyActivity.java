@@ -12,6 +12,14 @@ import com.dynastymasra.math.konversi.Konversi;
 import com.dynastymasra.math.luas.Luas;
 import com.dynastymasra.math.volume.Volume;
 
+/**
+ * Author   : Dynastymasra
+ * Name     : Dimas Ragil T
+ * Email    : dynastymasra@gmail.com
+ * LinkedIn : http://www.linkedin.com/in/dynastymasra
+ * Blogspot : dynastymasra.wordpress.com | dynastymasra.blogspot.com
+ */
+
 public class MyActivity extends Activity {
 
     private ListView listView;
@@ -64,6 +72,9 @@ public class MyActivity extends Activity {
         } else if (item.equalsIgnoreCase("Konversi Suhu")) {
             Intent intent = new Intent(MyActivity.this, Konversi.class);
             intent.putExtra("item", item);
+            startActivity(intent);
+        } else if (item.equalsIgnoreCase("About Us")) {
+            Intent intent = new Intent(MyActivity.this, AboutUs.class);
             startActivity(intent);
         }
     }

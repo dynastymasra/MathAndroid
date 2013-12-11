@@ -42,5 +42,6 @@
         <activity android:name=".volume.VolumeTabung" android:screenOrientation="portrait"></activity>
         <activity android:name=".konversi.Konversi" android:screenOrientation="portrait"></activity>
         <activity android:name=".konversi.KonversiHitung" android:screenOrientation="portrait"></activity>
+        <activity android:name=".AboutUs" android:screenOrientation="portrait"></activity>
     </application>
 </manifest> 

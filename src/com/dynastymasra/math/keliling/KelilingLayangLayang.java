@@ -28,11 +28,11 @@ public class KelilingLayangLayang extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.keliling_layang_layang);
 
-        buttonBack = (Button)findViewById(R.id.buttonKelilingLayangLayang);
-        buttonNext = (Button)findViewById(R.id.buttonKelilingLayangLayang1);
-        panjangAB = (EditText)findViewById(R.id.editTextKelilingLayangLayang);
-        panjangDC = (EditText)findViewById(R.id.editTextKelilingLayangLayang1);
-        textView = (TextView)findViewById(R.id.textViewKelilingLayangLayang1);
+        buttonBack = (Button) findViewById(R.id.buttonKelilingLayangLayang);
+        buttonNext = (Button) findViewById(R.id.buttonKelilingLayangLayang1);
+        panjangAB = (EditText) findViewById(R.id.editTextKelilingLayangLayang);
+        panjangDC = (EditText) findViewById(R.id.editTextKelilingLayangLayang1);
+        textView = (TextView) findViewById(R.id.textViewKelilingLayangLayang1);
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override

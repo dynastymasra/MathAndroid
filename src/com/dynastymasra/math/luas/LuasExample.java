@@ -32,7 +32,7 @@ public class LuasExample extends Activity {
         buttonNext = (Button) findViewById(R.id.buttonLuasNext);
         buttonBack = (Button) findViewById(R.id.buttonLuasBack);
         imageView = (ImageView) findViewById(R.id.imageViewLuas);
-        textView = (TextView)findViewById(R.id.textViewLuasKet);
+        textView = (TextView) findViewById(R.id.textViewLuasKet);
 
         view();
 

@@ -29,10 +29,10 @@ public class KelilingExample extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.keliling);
 
-        textView = (TextView)findViewById(R.id.textViewKeliling);
-        imageView = (ImageView)findViewById(R.id.imageViewKeliling);
-        buttonBack = (Button)findViewById(R.id.buttonKeliling);
-        buttonNext = (Button)findViewById(R.id.buttonKeliling1);
+        textView = (TextView) findViewById(R.id.textViewKeliling);
+        imageView = (ImageView) findViewById(R.id.imageViewKeliling);
+        buttonBack = (Button) findViewById(R.id.buttonKeliling);
+        buttonNext = (Button) findViewById(R.id.buttonKeliling1);
 
         view();
 
@@ -57,7 +57,7 @@ public class KelilingExample extends Activity {
         Intent intent = getIntent();
         String item = intent.getStringExtra("item");
 
-        if(item.equalsIgnoreCase("Jajar Genjang")) {
+        if (item.equalsIgnoreCase("Jajar Genjang")) {
             imageView.setImageResource(R.drawable.uraian_keliling_jajar_genjang);
             textView.setText(item);
             number = 1;

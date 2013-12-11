@@ -28,11 +28,11 @@ public class KelilingJajarGenjang extends Activity {
         super.onPostCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.keliling_jajar_genjang);
 
-        buttonBack = (Button)findViewById(R.id.buttonKelilingJajarGenjang);
-        buttonNext = (Button)findViewById(R.id.buttonKelilingJajarGenjang1);
-        textView = (TextView)findViewById(R.id.textViewKelilingJajarGenjang1);
-        panjangAB = (EditText)findViewById(R.id.editTextKelilingJajarGenjang);
-        panjangBC = (EditText)findViewById(R.id.editTextKelilingJajarGenjang1);
+        buttonBack = (Button) findViewById(R.id.buttonKelilingJajarGenjang);
+        buttonNext = (Button) findViewById(R.id.buttonKelilingJajarGenjang1);
+        textView = (TextView) findViewById(R.id.textViewKelilingJajarGenjang1);
+        panjangAB = (EditText) findViewById(R.id.editTextKelilingJajarGenjang);
+        panjangBC = (EditText) findViewById(R.id.editTextKelilingJajarGenjang1);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

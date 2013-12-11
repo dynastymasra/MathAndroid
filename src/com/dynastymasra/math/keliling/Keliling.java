@@ -30,7 +30,7 @@ public class Keliling extends Activity {
         setContentView(R.layout.main);
 
         CustomList customList = new CustomList(Keliling.this, text, image);
-        listView = (ListView)findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(customList);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

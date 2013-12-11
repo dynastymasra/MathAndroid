@@ -29,10 +29,10 @@ public class Konversi extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.konversi);
 
-        buttonBack = (Button)findViewById(R.id.buttonKonversi);
-        buttonNext = (Button)findViewById(R.id.buttonKonversi1);
-        textView = (TextView)findViewById(R.id.textViewKonversi);
-        imageView = (ImageView)findViewById(R.id.imageViewKonversi);
+        buttonBack = (Button) findViewById(R.id.buttonKonversi);
+        buttonNext = (Button) findViewById(R.id.buttonKonversi1);
+        textView = (TextView) findViewById(R.id.textViewKonversi);
+        imageView = (ImageView) findViewById(R.id.imageViewKonversi);
 
         view();
 

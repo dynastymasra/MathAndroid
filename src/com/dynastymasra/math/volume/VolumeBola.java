@@ -28,10 +28,10 @@ public class VolumeBola extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.volume_bola);
 
-        editText = (EditText)findViewById(R.id.editTextVolumeBola);
-        buttonBack = (Button)findViewById(R.id.buttonVolumeBola);
-        buttonNext = (Button)findViewById(R.id.buttonVolumeBola1);
-        textView = (TextView)findViewById(R.id.textViewVolumeBola);
+        editText = (EditText) findViewById(R.id.editTextVolumeBola);
+        buttonBack = (Button) findViewById(R.id.buttonVolumeBola);
+        buttonNext = (Button) findViewById(R.id.buttonVolumeBola1);
+        textView = (TextView) findViewById(R.id.textViewVolumeBola);
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +53,7 @@ public class VolumeBola extends Activity {
         if (editText.getText().toString().isEmpty()) {
             Toast.makeText(VolumeBola.this, "Masukan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         } else {
-            Double hasil = (4.0/3.0) * 3.14 * Math.pow(Double.valueOf(editText.getText().toString()), 3);
+            Double hasil = (4.0 / 3.0) * 3.14 * Math.pow(Double.valueOf(editText.getText().toString()), 3);
             textView.setText("" + hasil);
         }
     }

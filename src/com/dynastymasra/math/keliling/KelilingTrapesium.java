@@ -28,13 +28,13 @@ public class KelilingTrapesium extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.keliling_trapesium);
 
-        buttonBack = (Button)findViewById(R.id.buttonKelilingTrapesium);
-        buttonNext = (Button)findViewById(R.id.buttonKelilingTrapesium1);
-        panjangAB = (EditText)findViewById(R.id.editTextKelilingTrapesium);
-        panjangBC = (EditText)findViewById(R.id.editTextKelilingTrapesium1);
-        panjangCD = (EditText)findViewById(R.id.editTextKelilingTrapesium2);
-        panjangDA = (EditText)findViewById(R.id.editTextKelilingTrapesium3);
-        textView = (TextView)findViewById(R.id.textViewKelilingTrapesium);
+        buttonBack = (Button) findViewById(R.id.buttonKelilingTrapesium);
+        buttonNext = (Button) findViewById(R.id.buttonKelilingTrapesium1);
+        panjangAB = (EditText) findViewById(R.id.editTextKelilingTrapesium);
+        panjangBC = (EditText) findViewById(R.id.editTextKelilingTrapesium1);
+        panjangCD = (EditText) findViewById(R.id.editTextKelilingTrapesium2);
+        panjangDA = (EditText) findViewById(R.id.editTextKelilingTrapesium3);
+        textView = (TextView) findViewById(R.id.textViewKelilingTrapesium);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

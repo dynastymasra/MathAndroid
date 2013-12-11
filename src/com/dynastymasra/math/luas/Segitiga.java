@@ -28,11 +28,11 @@ public class Segitiga extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.luas_segitiga);
 
-        buttonBack = (Button)findViewById(R.id.buttonLuasSegitiga2);
-        buttonNext = (Button)findViewById(R.id.buttonLuasSegitiga1);
-        textView = (TextView)findViewById(R.id.luasSegitigaTextView1);
-        editTextAlas = (EditText)findViewById(R.id.editTextLuasSegitiga1);
-        editTextTinggi = (EditText)findViewById(R.id.luasSegitigaEditView2);
+        buttonBack = (Button) findViewById(R.id.buttonLuasSegitiga2);
+        buttonNext = (Button) findViewById(R.id.buttonLuasSegitiga1);
+        textView = (TextView) findViewById(R.id.luasSegitigaTextView1);
+        editTextAlas = (EditText) findViewById(R.id.editTextLuasSegitiga1);
+        editTextTinggi = (EditText) findViewById(R.id.luasSegitigaEditView2);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

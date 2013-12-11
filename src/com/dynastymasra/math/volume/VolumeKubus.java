@@ -28,10 +28,10 @@ public class VolumeKubus extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.volume_kubus);
 
-        buttonBack = (Button)findViewById(R.id.buttonVolumeKubus);
-        buttonNext = (Button)findViewById(R.id.buttonVolumeKubus1);
-        textView = (TextView)findViewById(R.id.textViewVolumeKubus);
-        editText = (EditText)findViewById(R.id.editTextVolumeKubus);
+        buttonBack = (Button) findViewById(R.id.buttonVolumeKubus);
+        buttonNext = (Button) findViewById(R.id.buttonVolumeKubus1);
+        textView = (TextView) findViewById(R.id.textViewVolumeKubus);
+        editText = (EditText) findViewById(R.id.editTextVolumeKubus);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

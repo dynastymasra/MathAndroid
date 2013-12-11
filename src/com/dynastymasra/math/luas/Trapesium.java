@@ -28,12 +28,12 @@ public class Trapesium extends Activity {
         super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
         setContentView(R.layout.luas_trapesium);
 
-        panjangAB = (EditText)findViewById(R.id.editTextLuasTrapesium);
-        panjangCD = (EditText)findViewById(R.id.editText1LuasTrapesium);
-        tinggi = (EditText)findViewById(R.id.editText2LuasTrapesium);
-        textView = (TextView)findViewById(R.id.textView2LuasTrapesium);
-        buttonBack = (Button)findViewById(R.id.button1LuasTrapesium);
-        buttonNext = (Button)findViewById(R.id.buttonLuasTrapesium);
+        panjangAB = (EditText) findViewById(R.id.editTextLuasTrapesium);
+        panjangCD = (EditText) findViewById(R.id.editText1LuasTrapesium);
+        tinggi = (EditText) findViewById(R.id.editText2LuasTrapesium);
+        textView = (TextView) findViewById(R.id.textView2LuasTrapesium);
+        buttonBack = (Button) findViewById(R.id.button1LuasTrapesium);
+        buttonNext = (Button) findViewById(R.id.buttonLuasTrapesium);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
