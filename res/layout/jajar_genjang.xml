@@ -50,7 +50,8 @@
             android:text="Hasil"
             android:id="@+id/hasilJajarGenjang"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/textView"/>
+            android:layout_below="@+id/textView"
+            android:textSize="10pt"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"

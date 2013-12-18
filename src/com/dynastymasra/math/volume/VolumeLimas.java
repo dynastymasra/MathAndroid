@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.dynastymasra.math.R;
 
+import java.math.BigDecimal;
+
 /**
  * Author   : Dynastymasra
  * Name     : Dimas Ragil T
@@ -55,6 +57,9 @@ public class VolumeLimas extends Activity {
             Toast.makeText(VolumeLimas.this, "Masukan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         } else {
             Double hasil = (1.0 / 3.0) * Double.valueOf(alas.getText().toString()) * Double.valueOf(tinggi.getText().toString());
+            BigDecimal bigDecimal = new BigDecimal(hasil);
+            bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+            hasil = bigDecimal.doubleValue();
             textView.setText("" + hasil);
         }
     }

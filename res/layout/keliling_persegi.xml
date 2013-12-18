@@ -36,6 +36,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Hasil"
+            android:textSize="10pt"
             android:id="@+id/textViewKelilingPersegi"
             android:layout_alignLeft="@+id/editTextKelilingPersegi"
             android:layout_below="@+id/textView1"

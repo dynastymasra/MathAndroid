@@ -38,6 +38,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Hasil"
+            android:textSize="10pt"
             android:id="@+id/textViewVolumeKubus"
             android:layout_alignLeft="@+id/editTextVolumeKubus"
             android:layout_below="@+id/textView1"

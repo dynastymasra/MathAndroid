@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.dynastymasra.math.R;
 
+import java.math.BigDecimal;
+
 /**
  * Author   : Dynastymasra
  * Name     : Dimas Ragil T
@@ -55,6 +57,9 @@ public class JajarGenjang extends Activity {
             Toast.makeText(JajarGenjang.this, "Masukan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         } else {
             Double luas = Double.valueOf(alas.getText().toString()) * Double.valueOf(tinggi.getText().toString());
+            BigDecimal bigDecimal = new BigDecimal(luas);
+            bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+            luas = bigDecimal.doubleValue();
             textView.setText("" + luas);
         }
     }

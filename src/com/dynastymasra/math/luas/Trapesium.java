@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.dynastymasra.math.R;
 
+import java.math.BigDecimal;
+
 /**
  * Author   : Dynastymasra
  * Name     : Dimas Ragil T
@@ -56,6 +58,9 @@ public class Trapesium extends Activity {
             Toast.makeText(Trapesium.this, "Masukan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         } else {
             Double hasil = 0.5 * (Double.valueOf(panjangAB.getText().toString()) + Double.valueOf(panjangCD.getText().toString())) * Double.valueOf(tinggi.getText().toString());
+            BigDecimal bigDecimal = new BigDecimal(hasil);
+            bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+            hasil = bigDecimal.doubleValue();
             textView.setText("" + hasil);
         }
     }

@@ -38,6 +38,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="hasil"
+            android:textSize="10pt"
             android:id="@+id/textViewVolumeBola"
             android:layout_alignLeft="@+id/editTextVolumeBola"
             android:layout_below="@+id/textView1"

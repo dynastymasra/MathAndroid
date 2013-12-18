@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="hasil"
+            android:textSize="10pt"
             android:id="@+id/textViewKelilingLingkaran"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/textView1"/>

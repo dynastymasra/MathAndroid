@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.*;
 import com.dynastymasra.math.R;
 
+import java.math.BigDecimal;
+
 /**
  * Author   : Dynastymasra
  * Name     : Dimas Ragil T
@@ -139,6 +141,9 @@ public class KonversiHitung extends Activity {
                 for (int i = 0; i < kali; i++) {
                     hitung = hitung / 10;
                 }
+                BigDecimal bigDecimal = new BigDecimal(hitung);
+                bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                hitung = bigDecimal.doubleValue();
                 hasil.setText("" + hitung);
             } else if (positionFrom < positinTo) {
                 int kali = positinTo - positionFrom;
@@ -146,6 +151,9 @@ public class KonversiHitung extends Activity {
                 for (int i = 0; i < kali; i++) {
                     hitung = hitung * 10;
                 }
+                BigDecimal bigDecimal = new BigDecimal(hitung);
+                bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                hitung = bigDecimal.doubleValue();
                 hasil.setText("" + hitung);
             } else {
                 hasil.setText(editText.getText().toString());
@@ -154,12 +162,21 @@ public class KonversiHitung extends Activity {
             if (positionFrom == 0) {
                 if (positinTo == 1) {
                     Double hitung = Double.valueOf(editText.getText().toString()) / 5 * 9 + 32;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 2) {
                     Double hitung = Double.valueOf(editText.getText().toString()) / 5 * 4;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 3) {
                     Double hitung = Double.valueOf(editText.getText().toString()) + 273.15;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else {
                     hasil.setText(editText.getText().toString());
@@ -167,12 +184,21 @@ public class KonversiHitung extends Activity {
             } else if (positionFrom == 1) {
                 if (positinTo == 0) {
                     Double hitung = (Double.valueOf(editText.getText().toString()) - 32) / 9 * 5;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 2) {
                     Double hitung = (Double.valueOf(editText.getText().toString()) - 32) / 9 * 4;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 3) {
                     Double hitung = (Double.valueOf(editText.getText().toString()) - 32) / 9 * 5 + 273.15;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else {
                     hasil.setText(editText.getText().toString());
@@ -180,12 +206,21 @@ public class KonversiHitung extends Activity {
             } else if (positionFrom == 2) {
                 if (positinTo == 0) {
                     Double hitung = Double.valueOf(editText.getText().toString()) / 4 * 5;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 1) {
                     Double hitung = Double.valueOf(editText.getText().toString()) / 4 * 9 + 32;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 3) {
                     Double hitung = Double.valueOf(editText.getText().toString()) / 4 * 5 + 273.15;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else {
                     hasil.setText(editText.getText().toString());
@@ -193,12 +228,21 @@ public class KonversiHitung extends Activity {
             } else if (positionFrom == 3) {
                 if (positinTo == 0) {
                     Double hitung = Double.valueOf(editText.getText().toString()) - 273.15;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 1) {
                     Double hitung = (Double.valueOf(editText.getText().toString()) + 273.15) / 5 * 9 + 32;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else if (positinTo == 2) {
                     Double hitung = (Double.valueOf(editText.getText().toString()) - 273.15) / 5 * 4;
+                    BigDecimal bigDecimal = new BigDecimal(hitung);
+                    bigDecimal = bigDecimal.setScale(5, BigDecimal.ROUND_HALF_UP);
+                    hitung = bigDecimal.doubleValue();
                     hasil.setText("" + hitung);
                 } else {
                     hasil.setText(editText.getText().toString());

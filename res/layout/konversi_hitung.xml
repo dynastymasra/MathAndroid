@@ -32,14 +32,15 @@
             android:id="@+id/editTextKonversiHitung"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewKonversiHitung1"
-            android:layout_toLeftOf="@+id/spinnerKonversiHitung"
-            android:numeric="decimal"/>
+            android:numeric="decimal"
+            android:layout_alignParentRight="true"/>
     <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerKonversiHitung"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textViewKonversiHitung1"/>
+            android:layout_alignLeft="@+id/editTextKonversiHitung"
+            android:layout_below="@+id/editTextKonversiHitung"
+            android:layout_alignRight="@+id/editTextKonversiHitung"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,8 +52,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerKonversiHitung1"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/textView"/>
+            android:layout_alignLeft="@+id/editTextKonversiHitung"
+            android:layout_below="@+id/textView"
+            android:layout_alignRight="@+id/editTextKonversiHitung"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,8 +66,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hasil"
+            android:textSize="10pt"
             android:id="@+id/textViewKonversiHitung2"
-            android:layout_centerHorizontal="true"
+            android:gravity="center" android:layout_centerHorizontal="true"
             android:layout_below="@+id/textView1"/>
     <LinearLayout
             android:orientation="horizontal"
