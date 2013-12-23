@@ -45,5 +45,9 @@
         <activity android:name=".konversi.KonversiHitung" android:screenOrientation="portrait"></activity>
         <activity android:name=".AboutUs" android:screenOrientation="portrait"></activity>
         <activity android:name=".AboutPage" android:screenOrientation="portrait"></activity>
+        <activity android:name=".exercise.Exercise" android:screenOrientation="portrait"></activity>
+        <activity android:name=".exercise.ExerciseBeginner" android:screenOrientation="portrait"></activity>
+        <activity android:name=".exercise.ExerciseIntermediate" android:screenOrientation="portrait"></activity>
+        <activity android:name=".exercise.ExerciseAdvanced" android:screenOrientation="portrait"></activity>
     </application>
 </manifest> 
